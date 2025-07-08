@@ -82,7 +82,7 @@ function Observer() {
                 </div>
                 <div >
                     {items.map((item, i) => (
-                        <div key={i} className="relative w-[90vw] mx-auto lg:w-[444px]  h-[339px]">
+                        <div key={i} className="relative w-[90vw] mx-auto lg:w-[444px] h-[110px] md:h-[250px] lg:h-[190px]">
                             <div 
                                 className={`absolute top-0 left-0  md:overflow-hidden lg:h-auto ${i === index ? "opacity-100 z-10" : "opacity-0 z-0"}`}>
                                 <Image src={item.imageUrl} alt="" width={0} height={0}

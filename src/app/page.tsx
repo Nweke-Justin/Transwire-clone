@@ -231,7 +231,7 @@ export default function Home() {
               className="mb-8 lg:mb-16 mx-auto"
             />
             <p className="font-medium text-[12px] text-[#A5A5A5] mb-[44px]">
-              never thought international transactions could be this straightforward. Transwire's app is intuitive and easy to use, and I can track my payments in real time. The best part? No hidden fees! I’m so glad I switched to Transwire.
+              never thought international transactions could be this straightforward. Transwire app is intuitive and easy to use, and I can track my payments in real time. The best part? No hidden fees! I am so glad I switched to Transwire.
             </p>
             <div className="w-[170px] h-[52px] flex mx-auto space-x-2">
               <div>

@@ -148,7 +148,7 @@ function Footer() {
                             <div className="space-y-[12px] font-medium text-[#565656] text-[12px]">
                                 <p>About us</p>
                                 <p>Why Transwire</p>
-                                <p> What's new</p>
+                                <p> What is new</p>
                             </div>
                         </div>
                         <div>
