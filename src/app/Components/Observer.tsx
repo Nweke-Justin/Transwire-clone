@@ -60,7 +60,7 @@ function Observer() {
     <div className="mt-[36px] md:mt-[92px] w-[90vw] mx-auto">
       {/* sect1 */}
       <div className="text-center space-y-[16px] w-[100%] lg:w-[774px] mx-auto">
-        <h1 className="font-bold text-[20px] md:text-[30px] lg:text-[40px]">Simplified Global Finance Solutions</h1>
+        <h1 className="font-semibold lg:font-bold text-[20px] md:text-[30px] lg:text-[40px]">Simplified Global Finance Solutions</h1>
         <p className="text-[#565656] font-bold text-[14px] md:text-[19px] lg:text-[24px]">Manage your money effortlessly,<br className="hidden md:block" />
           anywhere in the world.
         </p>
@@ -76,7 +76,7 @@ function Observer() {
                 key={i}
                 className={`transition-all duration-300 ${i === index ? "border-l-3 md:border-l-8 border-blue-500 p-4 rounded" : "pl-2 lg:pl-4"}`}
               >
-                <h1 className="font-bold text-[14px] md:text-[20px]">{item.title}</h1>
+                <h1 className="font-semibold lg:font-bold text-[14px] md:text-[20px]">{item.title}</h1>
                 <p className="text-[#565656] font-bold text-[12px] md:text-[16px]">
                   {item.description}
                 </p>

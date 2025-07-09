@@ -97,10 +97,10 @@ export default function Home() {
       {/* mobile/tablet view section3 */}
       <div className="w-full bg-[#FFFFFF] lg:hidden mt-[20px]">
         <div className="w-[91vw] mx-auto space-y-[69px] py-[20px]">
-          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">10M+</p> <p className="font-medium text-[12px]">Total Users</p></div>
-          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">50+</p> <p className="font-medium text-[12px]">Currencies Supported</p></div>
-          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">100K+</p> <p className="font-medium text-[12px]">Transaction Per Day</p></div>
-          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">30+</p> <p className="font-medium text-[12px]">Country & Regions</p></div>
+          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">10M+</p> <p className="font-semibold text-[12px] text-[#565656]">Total Users</p></div>
+          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">50+</p> <p className="font-semibold text-[12px] text-[#565656]">Currencies Supported</p></div>
+          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">100K+</p> <p className="font-semibold text-[12px] text-[#565656]">Transaction Per Day</p></div>
+          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">30+</p> <p className="font-semibold text-[12px] text-[#565656]">Country & Regions</p></div>
         </div>
       </div>
       <div className=" mt-[20px] lg:mt-[5px] bg-[#FFFFFF]  md:hidden">
@@ -143,7 +143,7 @@ export default function Home() {
       {/* section5 */}
       <div className="w-full bg-[#FFFFFF]">
         <div className="w-[93vw] lg:w-[90vw] mx-auto">
-          <p className="font-bold text-[20px] md:text-[32px] text-center mt-[36px] lg:mt-[92px] lg:w-[75vw] lg:mx-auto mb-[31px] lg:mb-[60px] ">Trusted by thousands by businesses,<br className="hidden lg:block" />
+          <p className=" font-semibold lg:font-bold text-[20px] md:text-[32px] text-center mt-[36px] lg:mt-[92px] lg:w-[75vw] lg:mx-auto mb-[31px] lg:mb-[60px] ">Trusted by thousands by businesses,<br className="hidden lg:block" />
             freelancers, & everyday users around the world</p>
         </div>
         <div className="w-[81vw] mx-auto  hidden md:block">
@@ -161,7 +161,7 @@ export default function Home() {
       </div>
       {/* section6 */}
       <div>
-        <p className="text-[20px] md:text-[40px] font-bold text-center  mb-[20px] md:mb-[52px]">Discover your next business <br /> opportunity</p>
+        <p className="text-[20px] md:text-[40px] font-semibold lg:font-bold text-center  mb-[20px] md:mb-[52px]">Discover your next business <br /> opportunity</p>
         <div className="w-[90vw] mx-auto lg:flex lg:space-x-[20px] item-center justify-center">
           <div className="w-[100%] lg:w-[508px] h-auto mb-[20px] lg:mb-[0px]">
             <Image src={img9} alt="" width={0} height={0} />
@@ -190,7 +190,7 @@ export default function Home() {
       <Observer />
       {/* section9 */}
       <div className="w-full mt-85 lg:mt-95">
-        <h1 className="font-bold text-[20px] md:text-[30px] lg:text-[40px] w-[91vw] md:w-[59vw] mx-auto text-center  mt-[2px] text-[#1E1E1E]">
+        <h1 className="font-semibold lg:font-bold text-[20px] md:text-[30px] lg:text-[40px] w-[91vw] md:w-[59vw] mx-auto text-center  mt-[2px] text-[#1E1E1E]">
           Join the thousands of people that love using Transwire for their Foreign Transactions
         </h1>
         <div className=" w-[91vw] lg:w-[89.2vw] mx-auto justify-between block lg:flex space-y-[32px] lg:space-y-[0px] lg:space-x-35 mt-[32px] lg:mt-[52px]">
@@ -295,7 +295,7 @@ export default function Home() {
           alt=""
           width={0}
           height={0}
-          className="w-[82px] h-[82px] lg:w-[100px] lg:h-[100px] bg-[#F3F4F9] mx-auto rounded-full p-2 lg:p-4 absolute left-1/2 -translate-x-1/2 -top-10 lg:-top-12 mb-[-20px] mb-[0px]"
+          className="w-[82px] h-[82px] lg:w-[100px] lg:h-[100px] bg-[#F3F4F9] mx-auto rounded-full p-4 absolute left-1/2 -translate-x-1/2 -top-10 lg:-top-12 mb-[-20px] mb-[0px]"
         />
 
         <div className="bg-white w-full mt-[36px] lg:mt-[92px] pb-[36px] lg:pb-[92px]">
