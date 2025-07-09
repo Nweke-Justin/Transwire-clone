@@ -20,18 +20,18 @@ function navigation() {
                         <Link href={"/"} className="w-[134px] h-[28px]"><Image src={Logo} alt="" width={0} height={0} className="w-fill h-fill mt-[19px]" /></Link>
                     </div>
                     <div className="flex mt-[11px] mb-[13px] p-[10px] space-x-[16px] font-semibold">
-                        <Link href={"/product"} className="flex space-x-1">
+                        <Link href={"/product"} className="flex space-x-1 text-[14px]">
                             <span>Product</span> <ChevronDown width={0} height={0} className="w-[16px] h-[16px] mt-1" />
                         </Link>
-                        <Link href={"/about us"} > About Us</Link>
-                        <Link href={'/support'}>Support</Link>
-                        <Link href={'/blog'}>Blog</Link>
+                        <Link href={"/about us"} className="text-[14px]" > About Us</Link>
+                        <Link href={'/support'} className="text-[14px]">Support</Link>
+                        <Link href={'/blog'} className="text-[14px]">Blog</Link>
                     </div>
                     <div className="flex my-[14px] space-x-[8px] text-[12px]">
-                        <Link href={"/sign up"} className="px-[20px]  py-[9px]  text-center border font-medium  rounded-full">
+                        <Link href={"/sign up"} className="px-[25px]  py-[9px]  text-center border font-semibold  rounded-full">
                             Sign Up
                         </Link>
-                        <Link href={"/login"} className="bg-[#0052CC] px-[20px] py-[14px]  rounded-full text-md text-center text-[#FAFAFA] font-medium">
+                        <Link href={"/login"} className="bg-[#0052CC] px-[25px] py-[10px]  rounded-full text-md text-center text-[#FAFAFA] font-semibold">
                             Login
                         </Link>
                     </div>
