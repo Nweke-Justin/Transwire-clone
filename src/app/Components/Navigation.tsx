@@ -19,19 +19,19 @@ function navigation() {
                     <div>
                         <Link href={"/"} className="w-[134px] h-[28px]"><Image src={Logo} alt="" width={0} height={0} className="w-fill h-fill mt-[19px]" /></Link>
                     </div>
-                    <div className="flex mt-[11px] mb-[13px] p-[10px] space-x-[16px] font-medium">
-                        <Link href={"/product"} className="flex">
-                            <span>Product</span> <ChevronDown />
+                    <div className="flex mt-[11px] mb-[13px] p-[10px] space-x-[16px] font-semibold">
+                        <Link href={"/product"} className="flex space-x-1">
+                            <span>Product</span> <ChevronDown width={0} height={0} className="w-[16px] h-[16px] mt-1" />
                         </Link>
                         <Link href={"/about us"} > About Us</Link>
                         <Link href={'/support'}>Support</Link>
                         <Link href={'/blog'}>Blog</Link>
                     </div>
-                    <div className="flex my-[14px] space-x-[8px]">
-                        <Link href={"/sign up"} className="px-[20px]  py-[9px] text-md text-center border font-medium rounded-full">
+                    <div className="flex my-[14px] space-x-[8px] text-[12px]">
+                        <Link href={"/sign up"} className="px-[20px]  py-[9px]  text-center border font-medium  rounded-full">
                             Sign Up
                         </Link>
-                        <Link href={"/login"} className="bg-[#0052CC] px-[20px] py-[9px] rounded-full text-md text-center font-medium">
+                        <Link href={"/login"} className="bg-[#0052CC] px-[20px] py-[14px]  rounded-full text-md text-center text-[#FAFAFA] font-medium">
                             Login
                         </Link>
                     </div>
@@ -46,22 +46,22 @@ function navigation() {
                         <SheetTrigger>
                             <MenuIcon />
                         </SheetTrigger>
-                        <SheetContent side="top" className="h-[100vh]">
+                        <SheetContent side="top" className="h-[100vh] bg-white">
                             <SheetHeader>
                                 <SheetTitle className="w-[134px] h-[28px]">
                                    <Image src={Logo} alt="" width={0} height={0} className="w-fill h-fill " />
                                 </SheetTitle>
                                 <SheetDescription className="mt-[32px] font-medium text-[14px] text-black space-y-[20px]">
                                     <Link href={"/product"} className="flex space-x-2">
-                                        <span>Product</span> <ChevronDown />
+                                        <span className="font-semibold">Product</span> <ChevronDown />
                                     </Link>
                                     <div>
-                                        <Link href={"/product"}>
+                                        <Link href={"/product"} className="font-semibold">
                                             Support
                                         </Link>
                                     </div>
                                     <div>
-                                        <Link href={"/product"}>
+                                        <Link href={"/product"} className="font-semibold">
                                             Blog
                                         </Link>
                                     </div>
@@ -69,8 +69,8 @@ function navigation() {
                                         <div className="border px-[20px] py-[12px] rounded-full border-black">
                                             <Link href={"/sign up"}  > Sign Up</Link>
                                         </div>
-                                        <div className="bg-[#513DEB] px-[20px] py-[12px] rounded-full">
-                                            <Link href={"/login"}>Login</Link>
+                                        <div className="bg-[#513DEB]  px-[20px]  py-[12px] rounded-full">
+                                            <Link href={"/login"} className=" text-white">Login</Link>
                                         </div>
                                     </div>
                                 </SheetDescription>

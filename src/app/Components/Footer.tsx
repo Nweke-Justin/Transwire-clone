@@ -10,24 +10,24 @@ function Footer() {
         <div className="w-full ">
             {/* desktop view */}
             <div className="hidden md:block space-y-[92px]">
-                <div className="w-[88vw] mx-auto  flex mt-[92px]  justify-between">
+                <div className=" w-[80vw] lg:w-[90vw] xl:w-[80vw] mx-auto  flex mt-[46px] space-x-10  justify-between">
                     <div className="space-y-[16px]">
                         <Image
                             src={Logo}
                             alt=""
                             width={0}
                             height={0}
-                            className="w-[134.5px] h-[28px] "
+                            className="w-[100px] lg:w-[134.5px] h-[20px] lg:h-[28px] "
                         />
-                        <div className=" font-medium text-[#565656] space-y-[16px]">
+                        <div className=" font-semibold text-[#565656] space-y-[16px]">
                             <p>About Us</p>
                             <p>Why Transwire</p>
                             <p>what is new</p>
                         </div>
                     </div>
                     <div className="space-y-[24px]">
-                        <h1 className="font-semibold text-[18px]">Product</h1>
-                        <div className=" font-medium text-[#565656] space-y-[16px]">
+                        <h1 className="font-semibold text-[16px] lg:text-[18px]">Product</h1>
+                        <div className=" font-semibold text-[#565656] space-y-[16px]">
                             <p>
                                 Currency <br className="lg:hidden" /> conversion
                             </p>
@@ -40,8 +40,8 @@ function Footer() {
                         </div>
                     </div>
                     <div className="space-y-[24px]">
-                        <h1 className="font-semibold text-[18px]">Legal</h1>
-                        <div className=" font-medium text-[#565656] space-y-[16px]">
+                        <h1 className="font-semibold  text-[16px] lg:text-[18px]">Legal</h1>
+                        <div className=" font-semibold text-[#565656] space-y-[16px]">
                             <p>
                                 Terms and Conditions
                             </p>
@@ -51,8 +51,8 @@ function Footer() {
                         </div>
                     </div>
                     <div className="space-y-[24px]">
-                        <h1 className="font-semibold text-[18px]">Help</h1>
-                        <div className=" font-medium text-[#565656] space-y-[16px]">
+                        <h1 className="font-semibold  text-[16px] lg:text-[18px]">Help</h1>
+                        <div className=" font-semibold text-[#565656] space-y-[16px]">
                             <p>
                                 Help Center
                             </p>
@@ -65,7 +65,7 @@ function Footer() {
                         </div>
                     </div>
                     <div className="space-y-[24px]">
-                        <h1 className="font-semibold text-[18px]">Follow us</h1>
+                        <h1 className="font-semibold  text-[16px] lg:text-[18px]">Follow us</h1>
                         <div className=" font-medium text-[#565656] space-y-[16px]">
                             <div className="hidden lg:flex justify-between space-x-[8px]">
                                 <div className="rounded-full p-[10px] border">
@@ -130,12 +130,14 @@ function Footer() {
                 </div>
                 <div className="pb-[92px] w-[88vw] mx-auto space-y-[28px]">
                     <hr className="border-t border-t-[#A5A5A5]" />
-                    <p className="font-medium text-[16px]">© 2024 Transwire Glodal LLC. All rights reserved.</p>
+                    <p className="font-medium text-[16px]">©  <span className="font-semibold text-[#1E1E1E]">2024 Transwire Glodal LLC. All rights reserved.
+                        </span>
+                        </p>
                 </div>
             </div>
             {/* mobile view */}
             <div className="md:hidden ">
-                <div className="w-[90vw] mx-auto  mt-[36px]  space-y-[24px]">
+                <div className="w-[90vw] mx-auto  mt-[16px]  space-y-[24px]">
                     <div className="flex justify-between">
                         <div>
                             <Image
@@ -233,7 +235,8 @@ function Footer() {
                     </div>
                      <div className="pb-[36px] w-[90vw] mx-auto space-y-[28px]">
                     <hr className="border-t border-t-[#A5A5A5]" />
-                    <p className="font-medium text-[10px]">© 2024 Transwire Glodal LLC. All rights reserved.</p>
+                    <p className="font-medium text-[10px]">© <span className="font-semibold"> 2024 Transwire Global LLC. All rights reserved.</span>
+                    </p>
                 </div>
                 </div>
             </div>
