@@ -83,7 +83,7 @@ export default function Home() {
         </div>
       </div>
       {/* desktop view section3*/}
-      <div className="w-full py-[42px] hidden lg:block bg-[#FFFFFF]">
+      <div className="w-full py-[62px] hidden lg:block bg-[#FFFFFF]">
         <div className="w-[73vw] mx-auto flex justify-between ">
           <div className=" space-y-[15px] text-center"> <p className="font-bold text-[52px]">10M+</p> <p className="font-bold text-[16px] text-[#565656]">Total Users</p></div>
           <div className=" space-y-[15px] text-center"> <p className="font-bold text-[52px]">50+</p> <p className="font-bold text-[16px] text-[#565656]">Currencies Supported</p></div>
@@ -123,7 +123,7 @@ export default function Home() {
         </div>
       </div>
       {/* desktopview/tab sect 4 */}
-      <div className="w-full bg-[#EDF1FF] py-[32px] hidden md:flex md:space-x-[20px] lg:space-x-[28px] item-center justify-center mt-[32px]">
+      <div className="w-full bg-[#F2F2F2] py-[32px] hidden md:flex md:space-x-[20px] lg:space-x-[28px] item-center justify-center ">
         <p className="text-[12px]">Backend by and featured on</p>
         <div className="flex space-x-[24px]">
           <div className="w-[74.04px] h-[20px]">
@@ -189,11 +189,11 @@ export default function Home() {
       {/* section8 */}
       <Observer />
       {/* section9 */}
-      <div className="w-full mt-80">
+      <div className="w-full mt-85 lg:mt-95">
         <h1 className="font-bold text-[20px] md:text-[30px] lg:text-[40px] w-[91vw] md:w-[59vw] mx-auto text-center  mt-[2px] text-[#1E1E1E]">
           Join the thousands of people that love using Transwire for their Foreign Transactions
         </h1>
-        <div className=" w-[91vw] lg:w-[79.2vw] mx-auto justify-between block lg:flex space-y-[32px] lg:space-y-[0px] lg:space-x-35 mt-[32px] lg:mt-[52px]">
+        <div className=" w-[91vw] lg:w-[89.2vw] mx-auto justify-between block lg:flex space-y-[32px] lg:space-y-[0px] lg:space-x-35 mt-[32px] lg:mt-[52px]">
           <div>
             <Image
               src={img16}
@@ -295,7 +295,7 @@ export default function Home() {
           alt=""
           width={0}
           height={0}
-          className="w-[82px] h-[82px] lg:w-[124px] lg:h-[124px] bg-[#F3F4F9] mx-auto rounded-full p-2 lg:p-4 absolute left-1/2 -translate-x-1/2 -top-10 lg:-top-15 mb-[-20px] mb-[0px]"
+          className="w-[82px] h-[82px] lg:w-[100px] lg:h-[100px] bg-[#F3F4F9] mx-auto rounded-full p-2 lg:p-4 absolute left-1/2 -translate-x-1/2 -top-10 lg:-top-12 mb-[-20px] mb-[0px]"
         />
 
         <div className="bg-white w-full mt-[36px] lg:mt-[92px] pb-[36px] lg:pb-[92px]">
