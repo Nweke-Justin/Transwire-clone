@@ -108,9 +108,9 @@ export default function Home() {
           <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">30+</p> <p className="font-semibold text-[12px] text-[#565656]">Country & Regions</p></div>
         </div>
       </div>
-      <div className=" mt-[20px] lg:mt-[5px] bg-[#FFFFFF]  md:hidden">
-        <div className="w-[90vw] mx-auto bg-[#F2F2F2] py-[15px] px-[5vw]">
-          <p className="font-small text-[9px] mb-[4px]">Backed by and featured on</p>
+      <div className=" mt-[20px] bg-[#F2F2F2]   md:hidden">
+        <div className=" w-[90vw] mx-auto py-[15px] px-[5vw]">
+          <p className="font-small text-[9px] mb-[2px]">Backed by and featured on</p>
           <div className="flex space-x-[18px]">
             <div className="w-[55.5px] h-[15px]">
               <Image src={img4} alt="" width={0} height={0} className="w-full h-full" />
@@ -121,7 +121,7 @@ export default function Home() {
             <div className="w-[35.66px] h-[15px]">
               <Image src={img6} alt="" width={0} height={0} className="w-full h-full" />
             </div>
-            <div className="w-[65.43px] h-[7.98px]" >
+            <div className="w-[65px] h-[7.98px]" >
               <Image src={img7} alt="" width={0} height={0} className="w-full h-full" />
             </div>
           </div>
@@ -194,7 +194,7 @@ export default function Home() {
       {/* section8 */}
       <Observer />
       {/* section9 */}
-      <div className="w-full mt-85 lg:mt-95">
+      <div className="w-full mt-70 lg:mt-95">
         <h1 className="font-semibold lg:font-bold text-[20px] md:text-[30px] lg:text-[40px] w-[91vw] md:w-[59vw] mx-auto text-center  mt-[2px] text-[#1E1E1E]">
           Join the thousands of people that love using Transwire for their Foreign Transactions
         </h1>
@@ -277,7 +277,7 @@ export default function Home() {
               <div>
                 <h1 className="font-semibold text-[15px] md:text-[20px] mb-[18px]">What services does Transwire offer</h1>
                 {showCard1 && (
-                  <p className="text-[#A5A5A5]">Transwire specializes in seamless international money transfers, currency exchange, and cross-border payments. Whether you need to send money abroad, pay for services, or handle business transactionsTranswire specializes in seamless international money transfers, currency exchange, and cross-border payments. Whether you need to send money abroad, pay for services, or handle business transactions</p>)}
+                  <p className="text-[#A5A5A5] text-[10px] lg:text-[16px]">Transwire specializes in seamless international money transfers, currency exchange, and cross-border payments. Whether you need to send money abroad, pay for services, or handle business transactionsTranswire specializes in seamless international money transfers, currency exchange, and cross-border payments. Whether you need to send money abroad, pay for services, or handle business transactions</p>)}
               </div>
               <div>
               <X className="rounded-full p-2 bg-gray-100 hover:cursor-pointer" width={35} height={35} onClick={() => setShowCard1(prev => !prev)}
@@ -290,7 +290,7 @@ export default function Home() {
               <div>
                 <h1 className="font-semibold text-[15px] md:text-[20px] mb-[18px]">How long does it take for a transaction to be completed?</h1>
                 {showCard2 && (
-                  <p className="text-[#A5A5A5]">Transaction times may vary depending on the destination country and payment method. However, most transfers are completed within 1–3 business days. You can track your transfer in real time through the Transwire app or website.</p>
+                  <p className="text-[#A5A5A5] text-[10px] lg:text-[16px]">Transaction times may vary depending on the destination country and payment method. However, most transfers are completed within 1–3 business days. You can track your transfer in real time through the Transwire app or website.</p>
                 )}
 
               </div>
@@ -305,7 +305,7 @@ export default function Home() {
                 <h1 className="font-semibold text-[15px] md:text-[20px] mb-[18px]">What services does Transwire offer</h1>
                 {showCard3 && (
 
-                  <p className="text-[#A5A5A5]">
+                  <p className="text-[#A5A5A5] text-[10px] lg:text-[16px]">
                     Yes, Transwire charges a small fee for each transaction, which is displayed upfront before you confirm the transfer. We pride ourselves on transparency—there are no hidden costs, and our fees are among the lowest in the industry.
                   </p>
                 )}
@@ -321,7 +321,7 @@ export default function Home() {
               <div>
                 <h1 className="font-semibold text-[15px] md:text-[20px] mb-[18px]">What services does Transwire offer</h1>
                 {showCard4 && (
-                  <p className="text-[#A5A5A5]">
+                  <p className="text-[#A5A5A5] text-[10px] lg:text-[16px]">
                     Absolutely! Transwire uses state-of-the-art security measures, including encryption and multi-factor authentication, to ensure that your money and personal information are always protected. We are a fully licensed financial services provider, and thousands of customers trust us with their foreign transactions every day.
                   </p>
                 )}
