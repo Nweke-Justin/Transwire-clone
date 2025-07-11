@@ -35,7 +35,7 @@ export default function Home() {
       <Header />
       <div className="bg-[#EDF1FF]">
         {/* desktop view,1st section */}
-        <div className="hidden lg:flex space-x-[50px] mt-[52px] xl:space-x-[103px]">
+        <div className="hidden lg:flex space-x-[50px] pt-[152px] xl:space-x-[103px]">
           <div className="lg:ml-[50px] xl:ml-[150px] lg:w-[50%] xl:w-[520px] ">
             <div className="space-y-[16px] mb-[44px] ">
               <h1 className=" font-bold lg:text-[30px] xl:text-[40px]">Revolutionize Currency Exchange Transactions across Africa</h1>
@@ -57,7 +57,7 @@ export default function Home() {
         </div>
         {/* mobile view /tablet 1 section*/}
         <div className="lg:hidden bg-[#EDF1FF]">
-          <div className="w-[95vw] mx-auto space-x-[10.55px] mt-[36px] mb-[20px]">
+          <div className="w-[95vw] mx-auto space-x-[10.55px] pt-[36px] mb-[20px]">
             <h1 className="font-semibold text-[26px] md:text-[35px]">Revolutionize Currency Exchange Transactions across Africa
             </h1>
             <p className=" text-[12px] font-medium text-[#565656]">Offering instant, secure, and affordable currency exchange across Africa.</p>
@@ -92,10 +92,10 @@ export default function Home() {
       {/* desktop view section3*/}
       <div className="w-full py-[62px] hidden lg:block bg-[#FFFFFF]">
         <div className="w-[73vw] mx-auto flex justify-between ">
-          <div className=" space-y-[15px] text-center"> <p className="font-bold text-[52px]">10M+</p> <p className="font-bold text-[16px] text-[#565656]">Total Users</p></div>
-          <div className=" space-y-[15px] text-center"> <p className="font-bold text-[52px]">50+</p> <p className="font-bold text-[16px] text-[#565656]">Currencies Supported</p></div>
-          <div className=" space-y-[15px] text-center"> <p className="font-bold text-[52px]">100K+</p> <p className="font-bold text-[16px] text-[#565656]">Transaction Per Day</p></div>
-          <div className=" space-y-[15px] text-center"> <p className="font-bold text-[52px]">30+</p> <p className="font-bold text-[16px] text-[#565656]">Country & Regions</p></div>
+          <div className=" text-center"> <p className="font-semibold text-[52px]">10M+</p> <p className="font-medium text-[16px] text-[#565656] pt-[15px]">Total Users</p></div>
+          <div className=" space-y-[15px] text-center"> <p className="font-bold text-[52px]">50+</p> <p className="font-medium text-[16px] text-[#565656]">Currencies Supported</p></div>
+          <div className=" space-y-[15px] text-center"> <p className="font-bold text-[52px]">100K+</p> <p className="font-medium text-[16px] text-[#565656]">Transaction Per Day</p></div>
+          <div className=" space-y-[15px] text-center"> <p className="font-bold text-[52px]">30+</p> <p className="font-medium text-[16px] text-[#565656]">Country & Regions</p></div>
         </div>
       </div>
       <div className="w-full py-[32px] hidden md:block">
@@ -282,8 +282,8 @@ export default function Home() {
                   <p className="text-[#A5A5A5] text-[10px] lg:text-[16px]">Transwire specializes in seamless international money transfers, currency exchange, and cross-border payments. Whether you need to send money abroad, pay for services, or handle business transactionsTranswire specializes in seamless international money transfers, currency exchange, and cross-border payments. Whether you need to send money abroad, pay for services, or handle business transactions</p>)}
               </div>
               <div>
-              <X className="rounded-full p-2 bg-gray-100 hover:cursor-pointer" width={35} height={35} onClick={() => setShowCard1(prev => !prev)}
-              />
+                <X className="rounded-full p-2 bg-gray-100 hover:cursor-pointer" width={35} height={35} onClick={() => setShowCard1(prev => !prev)}
+                />
               </div>
             </div>
           </div>

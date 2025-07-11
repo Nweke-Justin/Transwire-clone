@@ -53,7 +53,7 @@ function navigation() {
                                 </SheetTitle>
                                 <SheetDescription className="mt-[32px] font-medium text-[14px] text-black">
                                     <div className="flex flex-col justify-between h-[90vh]">
-                                        <div className="space-y-[20px]">
+                                        <div className="space-y-[20px       ]">
                                             <Link href={"/product"} className="flex space-x-2">
                                                 <span className="font-medium">Product</span> <ChevronDown width={0} height={0} className="w-[16px] h-[16px] mt-1"/>
                                             </Link>
