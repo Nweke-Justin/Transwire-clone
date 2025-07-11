@@ -9,8 +9,9 @@ function Footer() {
     return (
         <div className="w-full ">
             {/* desktop view */}
-            <div className="hidden md:block space-y-[92px]">
-                <div className=" w-[80vw] lg:w-[90vw] xl:w-[80vw] mx-auto  flex mt-[46px] space-x-10  justify-between">
+            <div className="hidden md:block space-y-[46px] ">
+                <div></div>
+                <div className=" w-[80vw] lg:w-[90vw] xl:w-[80vw] mx-auto  flex  space-x-10  justify-between">
                     <div className="space-y-[16px]">
                         <Image
                             src={Logo}
@@ -131,8 +132,8 @@ function Footer() {
                 <div className="pb-[92px] w-[88vw] mx-auto space-y-[28px]">
                     <hr className="border-t border-t-[#A5A5A5]" />
                     <p className="font-medium text-[16px]">©  <span className="font-semibold text-[#1E1E1E]">2024 Transwire Glodal LLC. All rights reserved.
-                        </span>
-                        </p>
+                    </span>
+                    </p>
                 </div>
             </div>
             {/* mobile view */}
@@ -153,45 +154,45 @@ function Footer() {
                                 <p> What is new</p>
                             </div>
                         </div>
-                        <div>
+                        <div className="w-[50%]">
                             <h1 className="font-semibold text-[12px] mb-[18px]">Product</h1>
-                        <div className=" font-medium text-[#565656] space-y-[12px] text-[12px]">
-                                 <p>
-                                Currency conversion
-                            </p>
-                            <p>
-                                Cross-border payments
-                            </p>
-                            <p>
-                                Digital wallet management
-                            </p>
+                            <div className=" font-medium text-[#565656] space-y-[12px] text-[12px]">
+                                <p>
+                                    Currency conversion
+                                </p>
+                                <p>
+                                    Cross-border payments
+                                </p>
+                                <p>
+                                    Digital wallet management
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div className="flex space-x-[43px]">
+                    <div className="flex justify-between">
                         <div >
-                           <h1 className="font-semibold text-[12px] mb-[18px]">Legal</h1>
+                            <h1 className="font-semibold text-[12px] mb-[18px]">Legal</h1>
                             <div className="space-y-[12px] font-medium text-[#565656] text-[12px]">
                                 <p>Terms and Conditions</p>
                                 <p>Privacy Policy</p>
                             </div>
                         </div>
-                        <div>
+                        <div className="w-[50%]">
                             <h1 className="font-semibold text-[12px] mb-[18px]">Help</h1>
-                        <div className=" font-medium text-[#565656] space-y-[12px] text-[12px]">
-                             <p>
-                              Help Center      
-                             </p>
-                            <p>
-                              Blog
-                            </p>
-                            <p>
-                              Contact
-                            </p>
+                            <div className=" font-medium text-[#565656] space-y-[12px] text-[12px]">
+                                <p>
+                                    Help Center
+                                </p>
+                                <p>
+                                    Blog
+                                </p>
+                                <p>
+                                    Contact
+                                </p>
                             </div>
                         </div>
                     </div>
-                     <div className="space-y-[24px]">
+                    <div className="space-y-[24px]">
                         <h1 className="font-semibold text-[18px]">Follow us</h1>
                         <div className=" font-medium text-[#565656] space-y-[16px]">
                             <div className="flex space-x-[6px]">
@@ -233,11 +234,11 @@ function Footer() {
                             />
                         </div>
                     </div>
-                     <div className="pb-[36px] w-[90vw] mx-auto space-y-[28px]">
-                    <hr className="border-t border-t-[#A5A5A5]" />
-                    <p className="font-medium text-[10px]">© <span className="font-semibold"> 2024 Transwire Global LLC. All rights reserved.</span>
-                    </p>
-                </div>
+                    <div className="pb-[36px] w-[90vw] mx-auto space-y-[28px]">
+                        <hr className="border-t border-t-[#A5A5A5]" />
+                        <p className="font-medium text-[10px]">© <span className="font-semibold"> 2024 Transwire Global LLC. All rights reserved.</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

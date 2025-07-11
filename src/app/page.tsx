@@ -19,6 +19,8 @@ import img18 from "../../public/pictures/img18.png"
 import img19 from "../../public/pictures/img19.png"
 import img20 from "../../public/pictures/img20.png"
 import img23 from "../../public/pictures/img23.png"
+import img24 from "../../public/pictures/img24.png"
+import img25 from "../../public/pictures/img25.png"
 import { X } from 'lucide-react';
 import { useState } from "react";
 import Observer from "./Components/Observer";
@@ -58,7 +60,7 @@ export default function Home() {
           <div className="w-[95vw] mx-auto space-x-[10.55px] mt-[36px] mb-[20px]">
             <h1 className="font-semibold text-[26px] md:text-[35px]">Revolutionize Currency Exchange Transactions across Africa
             </h1>
-            <p className=" text-12px font-semibold text-[#565656]">Offering instant, secure, and affordable currency exchange across Africa.</p>
+            <p className=" text-[12px] font-medium text-[#565656]">Offering instant, secure, and affordable currency exchange across Africa.</p>
           </div>
           <div className="flex space-x-[13.33px] w-[91vw] mx-auto mb-[32px] ]">
             <div className="w-[135px] md:w-[202.5px] h-[40px] md:h-[60px]">
@@ -84,7 +86,7 @@ export default function Home() {
       <div className="w-full bg-[#1E1E1E] block lg:hidden py-[16px]">
         <div className="w-[71vw] mx-auto  text-center font-semibold  space-y-[12px]">
           <p className="text-[14px] text-[#FFFFFF]">Sign Up Today and Earn Rewards with Our Referral Program</p>
-          <button className="text-[10.5px] bg-[#0052CC] text-[#FAFAFA] py-[9px] px-[18px] rounded-[6px]">Get Started for Free</button>
+          <button className="text-[10.5px] bg-[#513DEB] text-[#FAFAFA] py-[9px] px-[18px] rounded-[6px]">Get Started for Free</button>
         </div>
       </div>
       {/* desktop view section3*/}
@@ -102,15 +104,15 @@ export default function Home() {
       {/* mobile/tablet view section3 */}
       <div className="w-full bg-[#FFFFFF] lg:hidden mt-[20px]">
         <div className="w-[91vw] mx-auto space-y-[69px] py-[20px]">
-          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">10M+</p> <p className="font-semibold text-[12px] text-[#565656]">Total Users</p></div>
-          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">50+</p> <p className="font-semibold text-[12px] text-[#565656]">Currencies Supported</p></div>
-          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">100K+</p> <p className="font-semibold text-[12px] text-[#565656]">Transaction Per Day</p></div>
-          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">30+</p> <p className="font-semibold text-[12px] text-[#565656]">Country & Regions</p></div>
+          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">10M+</p> <p className="font-medium text-[12px] text-[#565656]">Total Users</p></div>
+          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">50+</p> <p className="font-medium text-[12px] text-[#565656]">Currencies Supported</p></div>
+          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">100K+</p> <p className="font-medium text-[12px] text-[#565656]">Transaction Per Day</p></div>
+          <div className=" space-y-[11.25px] text-center"> <p className="font-semibold text-[39px]">30+</p> <p className="font-medium text-[12px] text-[#565656]">Country & Regions</p></div>
         </div>
       </div>
       <div className=" mt-[20px] bg-[#F2F2F2]   md:hidden">
-        <div className=" w-[90vw] mx-auto py-[15px] px-[5vw]">
-          <p className="font-small text-[9px] mb-[2px]">Backed by and featured on</p>
+        <div className=" w-[90vw] mx-auto py-[15px] px-[36px] space-y-[4px]">
+          <p className="font-small text-[9px] ">Backed by and featured on</p>
           <div className="flex space-x-[18px]">
             <div className="w-[55.5px] h-[15px]">
               <Image src={img4} alt="" width={0} height={0} className="w-full h-full" />
@@ -205,7 +207,7 @@ export default function Home() {
               alt=""
               width={40}
               height={40}
-              className="mb-8 lg:mb-16 mx-auto"
+              className="mb-[16px] mx-auto"
             />
             <p className="font-medium text-[12px] text-[#A5A5A5] mb-[44px] bg-[#F9F9FB] rounded-[20px] p-5">
               Transwire has been a game-changer for me! I used to struggle with high fees and slow processing times for international transactions, but Transwire has made everything so much easier. Their exchange rates are unbeatable.
@@ -215,7 +217,7 @@ export default function Home() {
               alt=""
               width={170}
               height={52}
-              className="mx-auto"
+              className="mx-auto mt-[20px] mb-[32px]"
             />
           </div>
           <div>
@@ -224,7 +226,7 @@ export default function Home() {
               alt=""
               width={40}
               height={40}
-              className="mb-8 lg:mb-16 mx-auto"
+              className="mb-[16px] mx-auto"
             />
             <p className="font-medium text-[12px] text-[#A5A5A5] mb-[44px] bg-[#F9F9FB] rounded-[20px] p-5">
               I’ve been using Transwire for a few months now, and I’m truly impressed by how seamless it is. Sending money abroad is hassle-free. Whether I’m paying for services or sending money to family, Transwire is my go-to platform.
@@ -234,7 +236,7 @@ export default function Home() {
               alt=""
               width={170}
               height={52}
-              className="mx-auto"
+              className="mx-auto mt-[20px] mb-[32px]"
             />
           </div>
           <div>
@@ -243,12 +245,12 @@ export default function Home() {
               alt=""
               width={40}
               height={40}
-              className="mb-8 lg:mb-16 mx-auto"
+              className="mb-[16px] mx-auto"
             />
             <p className="font-medium text-[12px] text-[#A5A5A5] mb-[44px] bg-[#F9F9FB] rounded-[20px] p-5">
               never thought international transactions could be this straightforward. Transwire app is intuitive and easy to use, and I can track my payments in real time. The best part? No hidden fees! I am so glad I switched to Transwire.
             </p>
-            <div className="w-[170px] h-[52px] flex mx-auto space-x-2">
+            <div className="w-[170px] h-[52px] flex mx-auto space-x-2 mt-[20px] mb-[32px]">
               <div>
                 <Image
                   src={img19}
@@ -344,19 +346,19 @@ export default function Home() {
         />
 
         <div className="bg-white w-full mt-[36px] lg:mt-[92px] pb-[36px] lg:pb-[92px]">
-          <div className=" w-[90vw] lg:w-[79vw] mx-auto rounded-[20px] lg:rounded-[40px] bg-black text-white pt-[24px] lg:pt-[32px]">
+          <div className=" w-[90vw] lg:w-[79vw] mx-auto rounded-[20px] px-[21px] lg:rounded-[40px] bg-black text-white pt-[24px] lg:pt-[32px]">
 
             <h1 className="font-semibold text-[20px] md:text-[30px] lg:text-[40px] my-[24px] md:my-[28px] lg:my-[32px] text-center">Download the Transwire App & <br className="hidden md:block" /> Get Started Now!</h1>
             <div className="flex space-x-[25.6px] md:space-x-[32px] item-center justify-center pb-[44px] lg:pb-[80px]">
               <Image
-                src={img1}
+                src={img24}
                 alt=""
                 width={0}
                 height={0}
                 className=" w-[108px] lg:w-[135px] h-[32px] lg: h-[40px] bg-white text-black rounded"
               />
               <Image
-                src={img2}
+                src={img25}
                 alt=""
                 width={0}
                 height={0}
@@ -367,8 +369,8 @@ export default function Home() {
           <div className=" mt-[32px] lg:mt-[92px] item-center justify-center">
             <h1 className="font-semibold text-[12px] md:text-[16px] text-center mb-[4px]">Stay Informed with Our Latest Updates</h1>
             <p className="text-[#A5A5A5] font-medium text-[12px] md:text-[16px] mb-[20px] lg:mb-[28px] text-center">Subscribe to our newsletter and be the first to know about updates.</p>
-            <div className="w-[90vw] md:w-[60vw] lg:w-[44vw] mx-auto flex mb-[10px] lg:mb-[92px] bg-[#F3F3F3] pl-[18px] lg:pl-[24px]">
-              <input type="text" placeholder="Enter email address" className="w-full font-bold text-black" />
+            <div className="w-[90vw] md:w-[60vw] lg:w-[44vw] mx-auto flex mb-[10px] lg:mb-[46px] bg-[#F3F3F3] pl-[18px] lg:pl-[24px]">
+              <input type="text" placeholder="Enter email address" className="w-full font-medium text-[10.5px] text-[14px] text-black" />
               <button className="px-[18px] lg:px-[24px] py-[12px] lg:py-[16px] text-white bg-[#2E42A5] rounded-tr-lg rounded-br-lg text-[10.5px] md:text-[14px] font-medium">Subscribe</button>
             </div>
           </div>

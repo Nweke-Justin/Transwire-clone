@@ -74,10 +74,10 @@ function Observer() {
             {items.map((item, i) => (
               <div
                 key={i}
-                className={`transition-all duration-300 ${i === index ? "border-l-3 md:border-l-8 border-blue-500 p-4 rounded" : "pl-2 lg:pl-4"}`}
+                className={`transition-all duration-300 ${i === index ? "border-l-3 md:border-l-8 border-blue-500 p-4 rounded bg-[#EDF1FF]" : "pl-2 lg:pl-4 bg-white"}`}
               >
-                <h1 className="font-semibold lg:font-bold text-[14px] md:text-[20px]">{item.title}</h1>
-                <p className="text-[#565656] font-bold text-[12px] md:text-[16px]">
+                <h1 className="font-semibold  text-[14px] md:text-[20px]">{item.title}</h1>
+                <p className="text-[#565656] font-medium text-[12px] md:text-[16px]">
                   {item.description}
                 </p>
               </div>
