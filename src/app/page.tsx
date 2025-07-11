@@ -32,8 +32,8 @@ export default function Home() {
   const [showCard4, setShowCard4] = useState<boolean>(false);
   return (
     <div className=" ">
+      <Header />
       <div className="bg-[#EDF1FF]">
-        <Header />
         {/* desktop view,1st section */}
         <div className="hidden lg:flex space-x-[50px] mt-[52px] xl:space-x-[103px]">
           <div className="lg:ml-[50px] xl:ml-[150px] lg:w-[50%] xl:w-[520px] ">
