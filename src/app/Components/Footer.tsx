@@ -5,6 +5,7 @@ import { Facebook, Linkedin, Youtube } from 'lucide-react';
 import { Instagram } from 'lucide-react';
 import img21 from "../../../public/pictures/img21.png"
 import img22 from "../../../public/pictures/img22.png"
+import Link from "next/link";
 function Footer() {
     return (
         <div className="w-full ">
@@ -21,7 +22,7 @@ function Footer() {
                             className="w-[100px] lg:w-[134.5px] h-[20px] lg:h-[28px] "
                         />
                         <div className=" font-semibold text-[#565656] space-y-[16px]">
-                            <p>About Us</p>
+                            <Link href={"/About"}>About Us</Link>
                             <p>Why Transwire</p>
                             <p>what is new</p>
                         </div>
@@ -43,11 +44,14 @@ function Footer() {
                     <div className="space-y-[24px]">
                         <h1 className="font-semibold  text-[16px] lg:text-[18px]">Legal</h1>
                         <div className=" font-semibold text-[#565656] space-y-[16px]">
-                            <p>
+                            <p> <Link href={"/terms"}>
                                 Terms and Conditions
+                            </Link>
                             </p>
                             <p>
-                                Privacy Policy
+                                <Link href={"/Privacy"}>
+                                    Privacy Policy
+                                </Link>
                             </p>
                         </div>
                     </div>
@@ -173,8 +177,16 @@ function Footer() {
                         <div >
                             <h1 className="font-semibold text-[12px] mb-[18px]">Legal</h1>
                             <div className="space-y-[12px] font-medium text-[#565656] text-[12px]">
-                                <p>Terms and Conditions</p>
-                                <p>Privacy Policy</p>
+                                <p>
+                                    <Link href={"/terms"}>
+                                        Terms and Conditions
+                                    </Link>
+                                </p>
+                                <p>
+                                    <Link href={"/Privacy"}>
+                                        Privacy Policy
+                                    </Link>
+                                </p>
                             </div>
                         </div>
                         <div className="w-[50%]">

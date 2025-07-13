@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import Logo from "../../../public/pictures/Logo.png"
 import Logo1 from "../../../public/pictures/Logo1.png"
 import Twitter from "../../../public/pictures/Twitter.png"
@@ -45,12 +46,16 @@ function Footerc() {
                     <div className="space-y-[24px]">
                         <h1 className="font-semibold  text-[16px] lg:text-[18px]">Legal</h1>
                         <div className=" font-semibold text-[#565656] lg:text-white space-y-[16px]">
-                            <p>
-                                Terms and Conditions
-                            </p>
-                            <p>
-                                Privacy Policy
-                            </p>
+                             <p>
+                                    <Link href={"/terms"}>
+                                        Terms and Conditions
+                                    </Link>
+                                </p>
+                                <p>
+                                    <Link href={"/Privacy"}>
+                                        Privacy Policy
+                                    </Link>
+                                </p>
                         </div>
                     </div>
                     <div className="space-y-[24px]">
@@ -175,8 +180,16 @@ function Footerc() {
                         <div >
                             <h1 className="font-semibold text-[12px] mb-[18px]">Legal</h1>
                             <div className="space-y-[12px] font-medium text-[#565656] text-[12px]">
-                                <p>Terms and Conditions</p>
-                                <p>Privacy Policy</p>
+                               <p>
+                                    <Link href={"/Terms&Conditions"}>
+                                        Terms and Conditions
+                                    </Link>
+                                </p>
+                                <p>
+                                    <Link href={"/Privacy"}>
+                                        Privacy Policy
+                                    </Link>
+                                </p>
                             </div>
                         </div>
                         <div className="w-[50%]">
