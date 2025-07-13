@@ -23,8 +23,8 @@ function navigation() {
                         <Link href={"/product"} className="flex space-x-1 text-[14px]">
                             <span>Product</span> <ChevronDown width={0} height={0} className="w-[16px] h-[16px] mt-1" />
                         </Link>
-                        <Link href={"/about us"} className="text-[14px]" > About Us</Link>
-                        <Link href={'/support'} className="text-[14px]">Support</Link>
+                        <Link href={"/About"} className="text-[14px]" > About Us</Link>
+                        <Link href={'/Support'} className="text-[14px]">Support</Link>
                         <Link href={'/blog'} className="text-[14px]">Blog</Link>
                     </div>
                     <div className="flex my-[14px] space-x-[8px] text-[12px]">
