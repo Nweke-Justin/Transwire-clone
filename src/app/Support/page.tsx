@@ -26,7 +26,7 @@ function page() {
                 <div className="absolute w-[52vw] left-1/2 transform -translate-x-1/2  top-[148px]">
                     <div className=" bg-[#513DEB33] text-[#0052CC] rounded-full text-center w-[96px] mx-auto">Reach Us</div>
                     <h1 className="text-center font-semibold text-[40px] mt-[12px] mb-[16px]">Contact Us</h1>
-                    <p className="font-medium text-[16px] text-[#A5A5A5] text-center">Your questions and feedback are important to us. Reach out to us through any of the channels listed below, and we'll make sure to get back to you as soon as possible.</p>
+                    <p className="font-medium text-[16px] text-[#A5A5A5] text-center">Your questions and feedback are important to us. Reach out to us through any of the channels listed below, and we will make sure to get back to you as soon as possible.</p>
                 </div>
                 <div>
                     <Image
@@ -52,7 +52,7 @@ function page() {
                 <p className="w-[50.5px] md:w-[96px] text-[6px] md:text-[12px] mx-auto text-center bg-[#513DEB33] text-[#0052CC] rounded-full mb-[5.75px]"> Reach us</p>
                 <h1 className="font-semibold text-[20px] text-center mb-[8px] ">Contact us</h1>
                 <div className="mb-[20.75px] text-[12px] font-medium text-center text-[#A5A5A5] w-[297px] mx-auto">
-                    Your questions and feedback are important to us. Reach out to us through any of the channels listed below, and we'll make sure to get back to you as soon as possible.
+                    Your questions and feedback are important to us. Reach out to us through any of the channels listed below, and we will make sure to get back to you as soon as possible.
                 </div>
             </div>
             <div className="block lg:flex bg-[#FFFFFF]  lg:w-[71.16vw] mx-auto py-[33px] lg:py-[72px] lg:space-x-[64px]">
