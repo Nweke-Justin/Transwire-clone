@@ -7,7 +7,6 @@ import img29 from "../../../public/pictures/img29.png"
 import img24 from "../../../public/pictures/img24.png"
 import img25 from "../../../public/pictures/img25.png"
 import img20 from "../../../public/pictures/img20.png"
-import Footer from "../Components/Footer"
 import Footerc from "../Components/Footerc"
 function page() {
     return (
