@@ -40,8 +40,8 @@ function Page() {
     <div>
       <Header />
       <div >
-          {/* {dispaly && (
-            <div  className="w-[90vw] lg:w-[79vw] mx-auto mt-[130px] mb-16">
+          {dispaly && (
+            <div  className="w-[90vw] lg:w-[79vw] mx-auto lg:mt-[130px] mb-16">
               <div className=" block lg:flex items-center lg:space-x-[60px]">
                 <div className="lg:w-[70.5%]">
                   <img
@@ -64,7 +64,7 @@ function Page() {
                 </div>
               </div>
             </div>
-          )} */}
+          )}
       </div>
       <div className=" lg:mt-[192px] w-[95vw] lg:w-[79.1vw] mx-auto">
         <h1 className="font-semibold text-[24px] lg:text-[40px] mb-[20px] lg:mb-[16px]">Latest Articles</h1>
