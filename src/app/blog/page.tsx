@@ -8,7 +8,6 @@ import img25 from "../../../public/pictures/img25.png"
 import { useState, useEffect } from "react"
 import Footer from "../Components/Footer"
 type Post = {
-  forEach: any
   id: number;
   title: string;
   description: string;
