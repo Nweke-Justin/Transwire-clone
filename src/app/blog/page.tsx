@@ -1,15 +1,14 @@
 "use client"
-// import All from "../Components/all"
 import Header from "../Components/Header"
-// import Exchange from "../Components/Exchange-rate"
 import Image from "next/image"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import img20 from "../../../public/pictures/img20.png"
 import img24 from "../../../public/pictures/img24.png"
 import img25 from "../../../public/pictures/img25.png"
-import { useState, useEffect } from "react"
+import { useState, useEffect,useRef } from "react"
 import Footer from "../Components/Footer"
 type Post = {
+  forEach: any
   id: number;
   title: string;
   description: string;
@@ -20,7 +19,18 @@ type Post = {
 function Page() {
   const [loading, setLoading] = useState<boolean>(true)
   const [posts, setPosts] = useState<Post[]>([])
-  const [dispaly, setDisplay] = useState<Post | null>(null)
+  const [display, setDisplay] = useState<Post | null>(null)
+  const [border, setBorder] = useState<boolean>(true)
+   const yesBorder = ()=>{
+    if (border===false){
+      setBorder(true)
+    }
+   }
+   const noBorder=()=>{
+    if (border===true){
+      setBorder(false)
+    }
+   }
   useEffect(() => {
     async function getInfo() {
       try {
@@ -36,35 +46,36 @@ function Page() {
     getInfo()
 
   }, [])
+
   return (
     <div>
       <Header />
       <div >
-          {dispaly && (
-            <div  className="w-[90vw] lg:w-[79vw] mx-auto lg:mt-[130px] mb-16">
-              <div className=" block lg:flex items-center lg:space-x-[60px]">
-                <div className="lg:w-[70.5%]">
-                  <img
-                    src={dispaly.image}
-                    alt={dispaly.title}
-                    className="w-full  h-auto lg:h-[60vh] rounded-[26px]"
-                  />
-                  <p className="font-semibold text-[20px] lg:text-[28px]">{dispaly.title}</p>
-                  <p className="text-[#565656] text-[16px] lg:text-[20px] mt-2">
-                    <span className="font-bold text-black">Category:</span> {dispaly.category}
-                  </p>
-                  <p className="text-[#565656] text-[16px] lg:text-[20px] mt-1">
-                    <span className="font-bold text-black">Price:</span> ${dispaly.price}
-                  </p>
-                </div>
-                <div className=" block lg:flex lg:w-[28vw]">
-                  <p className="mt-4 text-[14px] lg:text-[16px] text-gray-600">
-                    {dispaly.description}
-                  </p>
-                </div>
+        {display && (
+          <div className="w-[90vw] lg:w-[79vw] mx-auto lg:mt-[130px] mb-16">
+            <div className=" block lg:flex items-center lg:space-x-[60px]">
+              <div className="lg:w-[70.5%]">
+                <img
+                  src={display.image}
+                  alt={display.title}
+                  className="w-full  h-auto lg:h-[60vh] rounded-[26px]"
+                />
+                <p className="font-semibold text-[20px] lg:text-[28px]">{display.title}</p>
+                <p className="text-[#565656] text-[16px] lg:text-[20px] mt-2">
+                  <span className="font-bold text-black">Category:</span> {display.category}
+                </p>
+                <p className="text-[#565656] text-[16px] lg:text-[20px] mt-1">
+                  <span className="font-bold text-black">Price:</span> ${display.price}
+                </p>
+              </div>
+              <div className=" block lg:flex lg:w-[28vw]">
+                <p className="mt-4 text-[14px] lg:text-[16px] text-gray-600">
+                  {display.description}
+                </p>
               </div>
             </div>
-          )}
+          </div>
+        )}
       </div>
       <div className=" lg:mt-[192px] w-[95vw] lg:w-[79.1vw] mx-auto">
         <h1 className="font-semibold text-[24px] lg:text-[40px] mb-[20px] lg:mb-[16px]">Latest Articles</h1>
@@ -72,8 +83,8 @@ function Page() {
         <div className="w-[19vw] flex gap-[5%] text-medium">
           <Tabs defaultValue="account" className="w-full">
             <TabsList>
-              <TabsTrigger value="all">ALL</TabsTrigger>
-              <TabsTrigger value="exchange">Exchange Rate</TabsTrigger>
+              <TabsTrigger value="all" className={`pb-[20px] hover:cursor-pointer ${border ? ("border border-b-[#0052CC] rounded border-b-4 text-[#0052CC]") : ("")} `}onClick={()=>{yesBorder()}}>ALL</TabsTrigger>
+              <TabsTrigger value="exchange" className={`pb-[20px] hover:cursor-pointer ${!border ? ("border border-b-[#0052CC] rounded border-b-4 text-[#0052CC]") : ("")} `}onClick={()=>{noBorder()}}>Exchange Rate</TabsTrigger>
             </TabsList>
             <hr className="border w-[95vw] lg:w-[79.1vw] mx-auto border-[#A5A5A580] mb-[36px]" />
             <TabsContent value="all">
