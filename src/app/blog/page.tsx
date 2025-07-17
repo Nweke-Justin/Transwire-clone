@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import img20 from "../../../public/pictures/img20.png"
 import img24 from "../../../public/pictures/img24.png"
 import img25 from "../../../public/pictures/img25.png"
-import { useState, useEffect,useRef } from "react"
+import { useState, useEffect } from "react"
 import Footer from "../Components/Footer"
 type Post = {
   forEach: any
