@@ -80,7 +80,7 @@ function Page() {
         <h1 className="font-semibold text-[24px] lg:text-[40px] mb-[20px] lg:mb-[16px]">Latest Articles</h1>
         <p className="font-medium text-16px text-[#A5A5A5] hidden md:block md:mb-[20px] lg:mb-[45px] ">Explore best articles</p>
         <div className="w-[19vw] flex gap-[5%] text-medium">
-          <Tabs defaultValue="account" className="w-full">
+          <Tabs defaultValue="all" className="w-full">
             <TabsList>
               <TabsTrigger value="all" className={`pb-[20px] hover:cursor-pointer ${border ? ("border border-b-[#0052CC] rounded border-b-4 text-[#0052CC]") : ("")} `}onClick={()=>{yesBorder()}}>ALL</TabsTrigger>
               <TabsTrigger value="exchange" className={`pb-[20px] hover:cursor-pointer ${!border ? ("border border-b-[#0052CC] rounded border-b-4 text-[#0052CC]") : ("")} `}onClick={()=>{noBorder()}}>Exchange Rate</TabsTrigger>
