@@ -25,7 +25,7 @@ function Footer() {
                         </Link>
                         <div className=" font-semibold text-[#565656] space-y-[16px]">
                             <p>
-                                <Link href={"/about"}>
+                                <Link href={"/About"}>
                                     About Us
                                 </Link>
                             </p>
@@ -161,7 +161,7 @@ function Footer() {
                                 />
                             </Link>
                             <div className="space-y-[12px] font-medium text-[#565656] text-[12px]">
-                               <Link href={"/about"}> <p>About us</p></Link>
+                               <Link href={"/About"}> <p>About us</p></Link>
                                 <p>Why Transwire</p>
                                 <p> What is new</p>
                             </div>

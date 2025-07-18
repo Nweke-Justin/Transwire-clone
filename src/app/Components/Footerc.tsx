@@ -25,7 +25,7 @@ function Footerc() {
                         />
                         <div className=" font-semibold text-[#565656]  lg:text-white space-y-[16px]">
                             <p>
-                                <Link href={"/about"}>About Us</Link></p>
+                                <Link href={"/About"}>About Us</Link></p>
                             <p>Why Transwire</p>
                             <p>what is new</p>
                         </div>
@@ -71,7 +71,7 @@ function Footerc() {
                                 </Link>
                             </p>
                             <p> 
-                                <Link href={"/support"}>
+                                <Link href={"/Support"}>
                                 Contact
                                 </Link>
                             </p>
@@ -162,7 +162,7 @@ function Footerc() {
                             />
                             <div className="space-y-[12px] font-medium text-[#565656] text-[12px]">
                                 <p>
-                                    <Link href={"/about"}>About us</Link></p>
+                                    <Link href={"/About"}>About us</Link></p>
                                 <p>Why Transwire</p>
                                 <p> What is new</p>
                             </div>
@@ -210,7 +210,7 @@ function Footerc() {
                                     </Link>
                                 </p>
                                 <p>
-                                    <Link href={"/support"}>
+                                    <Link href={"/Support"}>
                                     Contact
                                     </Link>
                                 </p>
