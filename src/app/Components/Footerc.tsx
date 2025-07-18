@@ -24,7 +24,8 @@ function Footerc() {
                             className="w-[100px] lg:w-[134.5px] h-[20px] lg:h-[28px] "
                         />
                         <div className=" font-semibold text-[#565656]  lg:text-white space-y-[16px]">
-                            <p>About Us</p>
+                            <p>
+                                <Link href={"/about"}>About Us</Link></p>
                             <p>Why Transwire</p>
                             <p>what is new</p>
                         </div>
@@ -65,10 +66,14 @@ function Footerc() {
                                 Help Center
                             </p>
                             <p>
+                                <Link href={"/blog"}>
                                 Blog
+                                </Link>
                             </p>
-                            <p>
+                            <p> 
+                                <Link href={"/support"}>
                                 Contact
+                                </Link>
                             </p>
                         </div>
                     </div>
@@ -156,7 +161,8 @@ function Footerc() {
                                 className="w-[100.92px] h-[21px] mb-[12px]"
                             />
                             <div className="space-y-[12px] font-medium text-[#565656] text-[12px]">
-                                <p>About us</p>
+                                <p>
+                                    <Link href={"/about"}>About us</Link></p>
                                 <p>Why Transwire</p>
                                 <p> What is new</p>
                             </div>
@@ -199,10 +205,14 @@ function Footerc() {
                                     Help Center
                                 </p>
                                 <p>
+                                    <Link href={'/blog'}>
                                     Blog
+                                    </Link>
                                 </p>
                                 <p>
+                                    <Link href={"/support"}>
                                     Contact
+                                    </Link>
                                 </p>
                             </div>
                         </div>

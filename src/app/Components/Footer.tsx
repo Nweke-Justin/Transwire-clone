@@ -14,13 +14,15 @@ function Footer() {
                 <div></div>
                 <div className=" w-[80vw] lg:w-[90vw] xl:w-[80vw] mx-auto  flex  space-x-10  justify-between">
                     <div className="space-y-[16px]">
-                        <Image
-                            src={Logo}
-                            alt=""
-                            width={0}
-                            height={0}
-                            className="w-[100px] lg:w-[134.5px] h-[20px] lg:h-[28px] "
-                        />
+                        <Link href={"/"}>
+                            <Image
+                                src={Logo}
+                                alt=""
+                                width={0}
+                                height={0}
+                                className="w-[100px] lg:w-[134.5px] h-[20px] lg:h-[28px] "
+                            />
+                        </Link>
                         <div className=" font-semibold text-[#565656] space-y-[16px]">
                             <p>
                                 <Link href={"/about"}>
@@ -68,9 +70,9 @@ function Footer() {
                             <p>
                               <Link href={"/blog"}>  Blog </Link>
                             </p>
-                            <p>
+                          <Link href={"/support"}><p>
                                 Contact
-                            </p>
+                            </p></Link>
                         </div>
                     </div>
                     <div className="space-y-[24px]">
@@ -149,15 +151,17 @@ function Footer() {
                 <div className="w-[90vw] mx-auto  mt-[16px]  space-y-[24px]">
                     <div className="flex justify-between">
                         <div>
-                            <Image
-                                src={Logo}
-                                alt=""
-                                width={0}
-                                height={0}
-                                className="w-[100.92px] h-[21px] mb-[12px]"
-                            />
+                            <Link href={"/"}>
+                                <Image
+                                    src={Logo}
+                                    alt=""
+                                    width={0}
+                                    height={0}
+                                    className="w-[100.92px] h-[21px] mb-[12px]"
+                                />
+                            </Link>
                             <div className="space-y-[12px] font-medium text-[#565656] text-[12px]">
-                                <p>About us</p>
+                               <Link href={"/about"}> <p>About us</p></Link>
                                 <p>Why Transwire</p>
                                 <p> What is new</p>
                             </div>
@@ -199,12 +203,12 @@ function Footer() {
                                 <p>
                                     Help Center
                                 </p>
-                                <p>
+                               <Link href={"/blog"}> <p>
                                     Blog
-                                </p>
-                                <p>
+                                </p></Link>
+                               <Link href={"/support"}> <p>
                                     Contact
-                                </p>
+                                </p></Link>
                             </div>
                         </div>
                     </div>

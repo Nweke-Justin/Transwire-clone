@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image";
 import Logo from "../../../public/pictures/Logo.png"
 import { ChevronDown, MenuIcon } from "lucide-react";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import {
     Sheet,
     SheetContent,
@@ -24,7 +25,7 @@ function navigation() {
                             <span>Product</span> <ChevronDown width={0} height={0} className="w-[16px] h-[16px] mt-1" />
                         </Link>
                         <Link href={"/about"} className="text-[14px]" > About Us</Link>
-                        <Link href={'/Support'} className="text-[14px]">Support</Link>
+                        <Link href={'/support'} className="text-[14px]">Support</Link>
                         <Link href={'/blog'} className="text-[14px]">Blog</Link>
                     </div>
                     <div className="flex my-[14px] space-x-[8px] text-[12px]">
@@ -40,7 +41,7 @@ function navigation() {
             {/* mobile view/tablet */}
             <div className="lg:hidden flex justify-between bg-white ">
                 <div className="py-[24px] pl-[16px]">
-                    <Link href={"/"} className="w-[134px] h-[28px]"><Image src={Logo} alt="" width={0} height={0} className="w-fill h-fill " /></Link>                </div>
+                    <Link href={"/"} className="w-[134px] h-[28px]"><Image src={Logo} alt="" width={0} height={0} className="w-fill h-fill" /></Link>                </div>
                 <div className="py-[26px] px-[16px]">
                     <Sheet>
                         <SheetTrigger>
@@ -48,14 +49,15 @@ function navigation() {
                         </SheetTrigger>
                         <SheetContent side="top" className=" bg-white h-[100vh]">
                             <SheetHeader>
-                                <SheetTitle className="w-[134px] h-[28px]">
-                                    <Image src={Logo} alt="" width={0} height={0} className="w-fill h-fill " />
-                                </SheetTitle>
+                                <VisuallyHidden>
+                                    <SheetTitle></SheetTitle>
+                                </VisuallyHidden>
+                                <Link href={"/"} className="w-[134px] h-[28px]"> <Image src={Logo} alt="" width={0} height={0} className="w-fill h-fill " /></Link>
                                 <SheetDescription className="mt-[32px] font-medium text-[14px] text-black">
-                                    <div className="flex flex-col justify-between h-[90vh]">
-                                        <div className="space-y-[20px       ]">
+                                    <div className="flex flex-col  justify-between h-[480px] ">
+                                        <div className="space-y-[20px] ">
                                             <Link href={"/product"} className="flex space-x-2">
-                                                <span className="font-medium">Product</span> <ChevronDown width={0} height={0} className="w-[16px] h-[16px] mt-1"/>
+                                                <span className="font-medium">Product</span> <ChevronDown width={0} height={0} className="w-[16px] h-[16px] mt-1" />
                                             </Link>
                                             <div>
                                                 <Link href={"/support"} className="font-medium">

@@ -20,16 +20,16 @@ function Page() {
   const [posts, setPosts] = useState<Post[]>([])
   const [display, setDisplay] = useState<Post | null>(null)
   const [border, setBorder] = useState<boolean>(true)
-   const yesBorder = ()=>{
-    if (border===false){
+  const yesBorder = () => {
+    if (border === false) {
       setBorder(true)
     }
-   }
-   const noBorder=()=>{
-    if (border===true){
+  }
+  const noBorder = () => {
+    if (border === true) {
       setBorder(false)
     }
-   }
+  }
   useEffect(() => {
     async function getInfo() {
       try {
@@ -82,8 +82,8 @@ function Page() {
         <div className="w-[19vw] flex gap-[5%] text-medium">
           <Tabs defaultValue="all" className="w-full">
             <TabsList>
-              <TabsTrigger value="all" className={`pb-[20px] hover:cursor-pointer ${border ? ("border border-b-[#0052CC] rounded border-b-4 text-[#0052CC]") : ("")} `}onClick={()=>{yesBorder()}}>ALL</TabsTrigger>
-              <TabsTrigger value="exchange" className={`pb-[20px] hover:cursor-pointer ${!border ? ("border border-b-[#0052CC] rounded border-b-4 text-[#0052CC]") : ("")} `}onClick={()=>{noBorder()}}>Exchange Rate</TabsTrigger>
+              <TabsTrigger value="all" className={`pb-[20px] hover:cursor-pointer ${border ? ("border border-b-[#0052CC] rounded border-b-4 text-[#0052CC]") : ("")} `} onClick={() => { yesBorder() }}>ALL</TabsTrigger>
+              <TabsTrigger value="exchange" className={`pb-[20px] hover:cursor-pointer ${!border ? ("border border-b-[#0052CC] rounded border-b-4 text-[#0052CC]") : ("")} `} onClick={() => { noBorder() }}>Exchange Rate</TabsTrigger>
             </TabsList>
             <hr className="border w-[95vw] lg:w-[79.1vw] mx-auto border-[#A5A5A580] mb-[36px]" />
             <TabsContent value="all">
@@ -92,7 +92,12 @@ function Page() {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[90vw] gap-[36px] lg:w-[79.12vw] mx-auto lg:mb-[92px]"  >
                     {posts.map((post) => {
                       return (
-                        <div key={post.id} className="hover:cursor-pointer" onClick={() => setDisplay(post)}>
+                        <div key={post.id} className="hover:cursor-pointer" onClick={() => {
+                          window.scrollTo({
+                            top: 0,
+                            behavior: "smooth"
+                          });
+                         setDisplay(post)}}>
                           <img
                             src={post.image}
                             alt=""
