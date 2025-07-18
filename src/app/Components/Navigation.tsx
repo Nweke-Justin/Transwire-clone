@@ -24,7 +24,7 @@ function navigation() {
                         <Link href={"/product"} className="flex space-x-1 text-[14px]">
                             <span>Product</span> <ChevronDown width={0} height={0} className="w-[16px] h-[16px] mt-1" />
                         </Link>
-                        <Link href={"/about"} className="text-[14px]" > About Us</Link>
+                        <Link href={'/about'} className="text-[14px]" > About Us</Link>
                         <Link href={'/support'} className="text-[14px]">Support</Link>
                         <Link href={'/blog'} className="text-[14px]">Blog</Link>
                     </div>
@@ -54,7 +54,7 @@ function navigation() {
                                 </VisuallyHidden>
                                 <Link href={"/"} className="w-[134px] h-[28px]"> <Image src={Logo} alt="" width={0} height={0} className="w-fill h-fill " /></Link>
                                 <SheetDescription className="mt-[32px] font-medium text-[14px] text-black">
-                                    <div className="flex flex-col  justify-between h-[480px] ">
+                                    <div className="flex flex-col  justify-between h-[90vh] ">
                                         <div className="space-y-[20px] ">
                                             <Link href={"/product"} className="flex space-x-2">
                                                 <span className="font-medium">Product</span> <ChevronDown width={0} height={0} className="w-[16px] h-[16px] mt-1" />
